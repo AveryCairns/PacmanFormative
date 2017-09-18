@@ -32,7 +32,7 @@ namespace PacmanFormative
             SoundPlayer startSoundPlayer = new SoundPlayer(Properties.Resources.ufoTakeoff);
             startSoundPlayer.Play();
 
-            for (int x = 2; x <= 110; x += 6)
+            for (int x = 2; x <= 110; x += 6) //Going right loop
             {
 
                 // Drawing walls
@@ -59,7 +59,7 @@ namespace PacmanFormative
                 Thread.Sleep(200);
                 offScreenGraphics.Clear(Color.Black);
             }
-            // going down loop
+            // Going down loop
             for (int x = 10; x <= 75; x += 6)
             {
                 // Drawing Walls
