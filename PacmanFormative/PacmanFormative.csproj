@@ -88,5 +88,8 @@
   <ItemGroup>
     <None Include="Resources\UFO_Takeoff-Sonidor-1604321570.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School_Fire_Alarm-Cullen_Card-202875844.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

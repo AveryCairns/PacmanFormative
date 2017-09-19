@@ -31,6 +31,10 @@ namespace PacmanFormative
 
             SoundPlayer startSoundPlayer = new SoundPlayer(Properties.Resources.ufoTakeoff);
             startSoundPlayer.Play();
+            Thread.Sleep(2000);
+
+            SoundPlayer alarmPlayer = new SoundPlayer(Properties.Resources.fireAlarm);
+            alarmPlayer.Play();
 
             for (int x = 2; x <= 110; x += 6) //Going right loop
             {
@@ -99,6 +103,9 @@ namespace PacmanFormative
             offScreenGraphics.DrawString("Congrulations", winFont, winBrush, 20, 100);
 
             onScreenGraphics.DrawImage(bm, 0, 0);
+            Thread.Sleep(500);
+        
+            alarmPlayer.Stop();
         }
     }
 }
